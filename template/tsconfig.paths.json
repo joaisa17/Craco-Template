@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+
+        "paths": {
+            "@/*": ["./src/*"],
+
+            "@Assets/*": ["./src/Assets/*"],
+
+            "@Components/*": ["./src/Assets/Components/*"],
+            "@EssentialComponents/*": ["./src/Assets/Components/Essential/*"],
+            "@CommonComponents/*": ["./src/Assets/Components/Common/*"],
+
+            "@Media/*": ["./src/Assets/Media/*"],
+
+            "@scss/*": ["./src/Assets/scss/*"],
+
+            "@ts/*": ["./src/Assets/ts/*"],
+            "@CommonTS/*": ["./src/Assets/ts/Common/*"],
+
+            "@muim/*": ["./node_modules/@mui/material/*"],
+            "@muii/*": ["./node_modules/@mui/icons-material/*"]
+        }
+    }
+}

@@ -7,6 +7,8 @@
 
             "@Assets/*": ["./src/Assets/*"],
 
+            "@Views/*": ["./src/Assets/Views/*"],
+
             "@Components/*": ["./src/Assets/Components/*"],
             "@EssentialComponents/*": ["./src/Assets/Components/Essential/*"],
             "@CommonComponents/*": ["./src/Assets/Components/Common/*"],

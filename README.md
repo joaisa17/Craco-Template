@@ -9,5 +9,6 @@ A react app template designed to be used with typescript
 
 Once the installation process is completed, simply run
 `cd my-app`
+and
 `npm start`
 Now your app should be working!

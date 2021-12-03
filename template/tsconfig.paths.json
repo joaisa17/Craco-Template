@@ -7,18 +7,15 @@
 
             "@Assets/*": ["./src/Assets/*"],
 
-            "@Views/*": ["./src/Assets/Views/*"],
+            "@Views/*": ["./src/Views/*"],
 
-            "@Components/*": ["./src/Assets/Components/*"],
-            "@EssentialComponents/*": ["./src/Assets/Components/Essential/*"],
-            "@CommonComponents/*": ["./src/Assets/Components/Common/*"],
+            "@Components/*": ["./src/Components/*"],
+            "@CommonComponents/*": ["./src/Components/Common/*"],
 
-            "@Media/*": ["./src/Assets/Media/*"],
+            "@scss/*": ["./src/scss/*"],
 
-            "@scss/*": ["./src/Assets/scss/*"],
-
-            "@ts/*": ["./src/Assets/ts/*"],
-            "@CommonTS/*": ["./src/Assets/ts/Common/*"],
+            "@ts/*": ["./src/ts/*"],
+            "@CommonTS/*": ["./src/ts/Common/*"],
 
             "@muim/*": ["./node_modules/@mui/material/*"],
             "@muii/*": ["./node_modules/@mui/icons-material/*"]

@@ -1,4 +1,7 @@
-@import 'variables.scss';
-@import 'index.scss';
+@import 'Variables';
+@import 'Fonts';
 
-@import './Views/All';
+@import 'Index';
+
+@import 'Components/All';
+@import 'Views/All';

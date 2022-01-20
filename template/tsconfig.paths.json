@@ -1,7 +1,5 @@
 {
     "compilerOptions": {
-        "baseUrl": ".",
-
         "paths": {
             "@/*": ["./src/*"],
 
@@ -17,7 +15,7 @@
             "@ts/*": ["./src/ts/*"],
             "@CommonTS/*": ["./src/ts/Common/*"],
 
-            "@muim/*": ["./node_modules/@mui/material/*"],
+            "@muim": ["./node_modules/@mui/material/index"],
             "@muii/*": ["./node_modules/@mui/icons-material/*"]
         }
     }

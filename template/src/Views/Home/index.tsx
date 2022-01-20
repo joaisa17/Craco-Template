@@ -1,30 +1,34 @@
+import Page from '@Components/Essential/Page';
+
 import Logo from '@Assets/svg/Logo.svg';
 
-/*
-    The default export for external links
-    is ExternalLink, but to shorten the
-    length, we import it as EL
-*/
-import {default as EL} from '@CommonComponents/ExternalLink';
+import Link from '@CommonComponents/Link';
 
-const Home = () => <div className="app">
+import { Button } from '@muim';
+
+const Home = () => <Page title="Craco App" pageClass="home">
     <header className="app-header">
         <p>
             React template with Typescript
+            and Material UI,
             by joaisa17
         </p>
 
         <img src={Logo} className="app-logo" alt="Logo" />
 
         <p>
-            Edit <code>src/Views/Home/index.tsx</code> and save to reload
+            Edit <code>src/Views/Home/index.tsx</code> and save to reload.
         </p>
 
-        <EL content="Learn React" href="https://reactjs.org" />
+        <p>
+            <Button variant="contained">Material UI Button</Button>
+        </p>
 
-        <EL href="https://github.com/joaisa17">
+        <Link to="https://reactjs.org">Learn React</Link>
+
+        <Link to="https://github.com/joaisa17">
             Visit joaisa17 on GitHub
-        </EL>
+        </Link>
     </header>
 </div>
 

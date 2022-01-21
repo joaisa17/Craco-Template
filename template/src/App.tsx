@@ -1,24 +1,17 @@
+import { Fragment } from 'react';
 import { BrowserRouter, Navigate, Routes as ReactRoutes, Route } from 'react-router-dom';
 
-import Routes from '@Views/index';
+import Views from '@Views/index';
 
 export default function App() {
     return <BrowserRouter>
         <ReactRoutes>
 
-            {/* Create a Route component for each Route in Routes */}
-            {Routes.map((route, i) => {
-                const Element = route.element;
+            {/* Insert views */}
+            {Views.map((view, i) => <Fragment key={i}>{view}</Fragment>)}
 
-                return <Route
-                    key={i}
-                    path={route.path}
-                    element={<Element />}
-                />
-            })}
-
-            {/* Redirect to default if no page was rendered */}
-            <Route path="*" element={<Navigate to="/" />} />
+            {/* Redirect to the default route if no page was rendered */}
+            <Route path="*" element={<Navigate replace to="/" />} />
             
         </ReactRoutes>
     </BrowserRouter>

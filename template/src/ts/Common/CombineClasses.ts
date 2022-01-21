@@ -1,7 +1,7 @@
-export default function CombineClasses(a? : string, b? : string) {
+export default function CombineClasses(a? : any, b? : any) {
     return (
-        (a && b && `${a} ${b}`) ||
-        a ||
-        b
+        (a as string && b as string && `${a} ${b}`) ||
+        a as string ||
+        b as string
     )
 }

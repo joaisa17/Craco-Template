@@ -1,17 +1,13 @@
-import Route from '@ts/Classes/Route';
+import { Fragment } from 'react';
+import { Route } from 'react-router-dom';
 
 // Import all views
 import Home from './Home';
 
-/*
-    Add your routes below.
-    For non exact routes, use:
 
-    new Route('/examplepath/*', ExampleComponent);
-*/
 
-const Routes = [
-    new Route('/', Home)
+const Views = [
+    <Route path="/" element={<Home />} />
 ];
 
-export default Routes;
+export default Views;

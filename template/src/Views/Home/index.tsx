@@ -30,6 +30,6 @@ const Home = () => <Page title="Craco App" pageClass="home">
             Visit joaisa17 on GitHub
         </Link>
     </header>
-</div>
+</Page>
 
 export default Home;

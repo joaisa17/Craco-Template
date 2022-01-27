@@ -1,4 +1,3 @@
-import { Fragment } from 'react';
 import { Route } from 'react-router-dom';
 
 // Import all views

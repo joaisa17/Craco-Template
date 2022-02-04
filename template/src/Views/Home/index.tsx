@@ -6,7 +6,7 @@ import Link from '@CommonComponents/Link';
 
 import { Button } from '@muim';
 
-const Home = () => <Page title="Craco App" pageClass="home">
+const Home = () => <Page title="Craco App" className="page-home">
     <header className="app-header">
         <p>
             React template with Typescript

@@ -1,44 +1,21 @@
-import { FC, Fragment, useState, useEffect } from 'react';
+import { FC, Fragment, /*useState,*/ useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 
 import Link from '@CommonComponents/Link';
 
-import CombineClasses from '@CommonTS/CombineClasses';
-import Capitalize from '@CommonTS/Capitalize';
+import CombineClasses from '@tsc/CombineClasses';
+import Capitalize from '@tsc/Capitalize';
 
 import { Breadcrumbs } from '@muim';
 
-interface Crumb {
-    path: string;
-    name: string;
-}
-
-export type Crumbs = Crumb[];
-
-interface Props {
-    title: string;
-
-    className?: string;
-    pageClass?: string;
-
-    crumbs?: Crumbs;
-    lightCrumbs?: boolean;
-
-    hideHeader?: boolean;
-    hideFooter?: boolean;
-
-    disableMenu?: boolean;
-
-    disableScrollOnLoad?: boolean;
-}
-
-const Page : FC<Props> = (props) => {
+const Page : FC<Essential.Page.Props> = (props) => {
 
     useEffect(() => {
         if (!props.disableScrollOnLoad) window.scrollTo(0, 0);
     });
 
-    const [menuVisible, setMenuVisible] = useState<boolean>(false);
+    // If you have a menu
+    // const [menuVisible, setMenuVisible] = useState<boolean>(false);
 
     return <Fragment>
         <Helmet>
@@ -49,10 +26,10 @@ const Page : FC<Props> = (props) => {
         {/* If you have a menu: !props.disableMenu && <Menu setVisible={setMenuVisible} visible={menuVisible} /> */}
 
         {props.crumbs && <Breadcrumbs className="breadcrumbs">
-            {props.crumbs.map((crumb, i) => <Link {...props.lightCrumbs ? {dark: false} : {dark: true}} key={i} to={crumb.path}>{crumb.name}</Link>)}
+            {props.crumbs.map((crumb, i) => <Link key={i} to={crumb.path}>{crumb.name}</Link>)}
         </Breadcrumbs>}
 
-        <div className={CombineClasses('page content', CombineClasses(props.className, props.pageClass && 'page-' + props.pageClass))} children={props.children} />
+        <div className={CombineClasses('content', props.className)} children={props.children} />
 
         {/* If you have a footer: !props.hideFooter && <Footer /> */}
     </Fragment>

@@ -1,22 +1,23 @@
 {
     "compilerOptions": {
         "paths": {
-            "@/*": ["./src/*"],
-
-            "@Assets/*": ["./src/Assets/*"],
-
-            "@Views/*": ["./src/Views/*"],
-
-            "@Components/*": ["./src/Components/*"],
             "@CommonComponents/*": ["./src/Components/Common/*"],
-
+            "@Components/*": ["./src/Components/*"],
+            
+            "@Views/*": ["./src/Views/*"],
+            "@Assets/*": ["./src/Assets/*"],
+            
+            "@tsc/*": ["./src/ts/Common/*"],
+            "@tse/*": ["./src/ts/Essential/*"],
+            
+            "@ts/*": ["./src/ts/*"],
+            
+            "@muim": ["./node_modules/@mui/material/index"],
+            "@muii/*": ["./node_modules/@mui/icons-material/*"],
+            
             "@scss/*": ["./src/scss/*"],
 
-            "@ts/*": ["./src/ts/*"],
-            "@CommonTS/*": ["./src/ts/Common/*"],
-
-            "@muim": ["./node_modules/@mui/material/index"],
-            "@muii/*": ["./node_modules/@mui/icons-material/*"]
+            "@/*": ["./src/*"]
         }
     }
 }
